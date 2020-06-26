@@ -1,0 +1,11 @@
+@import url(/blocks/page/page.css);
+
+@font-face {
+    src: url('/fonts/HelveticaNeueCyr-Thin.woff');
+    src: url('/fonts/HelveticaNeueCyr-Thin.eot');
+    src: url('/fonts/HelveticaNeueCyr-Thin.svg');
+    src: url('/fonts/HelveticaNeueCyr-Thin.ttf');
+    font-family: 'HelveticaNeue';
+    }
+
+
