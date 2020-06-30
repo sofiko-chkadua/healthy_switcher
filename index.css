@@ -1,11 +1,59 @@
-@import url(/blocks/page/page.css);
+@import url(./blocks/page/page.css);
+@import url(./blocks/content/content.css);
+@import url(./blocks/intro/intro.css);
+@import url(./blocks/about/about.css);
+@import url(./blocks/chefs/chefs.css);
+@import url(./blocks/contacts/contacts.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/logo/logo.css);
+@import url(./blocks/recipes/recipes.css);
+@import url(./blocks/section-title/section-title.css);
+@import url(./blocks/social/social.css);
+@import url(./blocks/work/work.css);
+@import url(./blocks/dishes/dishes.css);
+
 
 @font-face {
-    src: url('/fonts/HelveticaNeueCyr-Thin.woff');
-    src: url('/fonts/HelveticaNeueCyr-Thin.eot');
-    src: url('/fonts/HelveticaNeueCyr-Thin.svg');
-    src: url('/fonts/HelveticaNeueCyr-Thin.ttf');
-    font-family: 'HelveticaNeue';
-    }
+    font-family: 'Helvetica Neue';
+    src: url('fonts/helveticaneuecyr-bold-webfont.eot');
+    src: url('fonts/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('fonts/helveticaneuecyr-bold-webfont.svg') format('svg'),
+         url('fonts/helveticaneuecyr-bold-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-bold-webfont.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/helveticaneuecyr-medium-webfont.eot');
+    src: url('fonts/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('fonts/helveticaneuecyr-medium-webfont.svg') format('svg'),
+         url('fonts/helveticaneuecyr-medium-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-medium-webfont.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('fonts/helveticaneuecyr-light-webfont.svg') format('svg'),
+         url('fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('fonts/helveticaneuecyr-black-webfont.eot');
+    src: url('fonts/helveticaneuecyr-black-webfont.eot?#iefix') format('embedded-opentype'),
+    	 url('fonts/helveticaneuecyr-black-webfont.svg') format('svg'),
+         url('fonts/helveticaneuecyr-black-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-black-webfont.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

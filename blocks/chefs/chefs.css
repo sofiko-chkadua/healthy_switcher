@@ -1,0 +1,50 @@
+.chefs {
+background-color:#191919;
+width: 1100px;
+margin: 0 auto;
+}
+
+.chefs__container {
+display: flex;
+justify-content: space-between;
+}
+
+.chefs__title {
+
+}
+
+.chefs__line {
+
+}
+
+.chefs__chef {
+width: 350px;
+height: 154px;
+}
+
+.chefs__photos {
+display: flex;
+justify-content: space-between;
+}
+
+.chefs__photo {
+
+}
+
+.chefs__name {
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #FFFFFF;
+}
+
+.chefs__descripton {
+font-size: 12px;
+line-height: 16px;
+font-weight: normal;
+color: rgba(255, 255, 255, 0.5);
+}
+
+.chefs__image {
+    
+}

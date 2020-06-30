@@ -1,0 +1,71 @@
+.social {
+width: 1100px;
+margin: 0 auto;
+}
+
+.social__title {
+
+}
+
+.social-cards {
+display: flex;
+justify-content: space-between;
+}
+
+.social__item {
+width: 350px;
+height: 330px;
+}
+
+.social__header {
+
+}
+
+.social__social-info {
+
+}
+
+.social__icon {
+
+}
+
+.social__social-name {
+
+}
+
+.social__button {
+
+}
+
+.social__line {
+
+}
+
+.social__description {
+
+}
+
+.social__date {
+
+}
+
+.social__text {
+
+}
+
+.social__copywright {
+
+}
+
+.social__photos {
+
+}
+
+.social__strelka {
+
+}
+
+.social__photo {
+    
+}
+

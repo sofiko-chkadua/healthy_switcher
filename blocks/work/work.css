@@ -1,0 +1,54 @@
+.work {
+width: 1110px;
+height: 476px;
+background-color:#191919;
+position: relative;
+margin: 0 auto;
+}
+
+.work__cards {
+width: 1110px;
+display: flex;
+justify-content: space-between;
+margin-top: 90px;
+}
+
+.work__item {
+position: relative;
+width: 255px;
+height: 206px;
+background-color: #252525;
+border-radius: 6px;
+}
+
+.work__line {
+position: absolute;
+top: 66px;
+left: 24px;
+width: 56px;
+height: 2px;
+background-color: #34C759;
+}
+
+.work__line_main {
+margin: 0 auto;
+}
+
+.work__title {
+}
+
+.work__header {
+margin-left: 24px;
+font-weight: 500;
+font-size: 22px;
+line-height: 27px;
+text-transform: capitalize;
+}
+
+.work__text {
+margin-left: 24px;
+margin-top: 36px;
+font-size: 13px;
+line-height: 18px;
+}
+

@@ -1,0 +1,100 @@
+.recipes {
+display: flex;
+justify-content: space-between;
+background-color:#191919;
+width: 1100px;
+margin: 0 auto;
+}
+
+.recipes__title {
+margin-top: 120px;
+margin-bottom: 90px;
+}
+
+.recipes__breakfast {
+width: 540px;
+height: 510px;
+background-image: url(../../images/breakfast.svg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.recipes__strelka {
+
+}
+
+.recipes__button {
+
+}
+
+.recipes__date {
+
+}
+
+.recipes__date_breakfast {
+
+}
+
+.recipes__text {
+
+}
+
+.recipes__author {
+
+}
+
+.recipes__statics {
+
+}
+
+.recipes__static {
+
+}
+
+.recipes__views {
+
+}
+
+.recipes__icon {
+
+}
+
+.recipes__others {
+width: 540px;
+height: 510px;
+}
+
+.recipes__item {
+width: 540px;
+height: 150px;
+background-color: #252525;
+border-radius: 6px;
+}
+
+.recipes__item_with-back {
+background-image: url(../../images/lunch.svg);
+}
+
+.recipes__item_active {
+background-color: #34C759;
+}
+
+.recipes__description {
+
+}
+
+.recipes__container {
+
+}
+
+.recipes__mini-container {
+
+}
+
+.recipes__date_lunch {
+
+}
+
+.recipes__date_dinner {
+    
+}

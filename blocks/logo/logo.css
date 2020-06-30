@@ -1,0 +1,7 @@
+.logo {
+display: flex;
+}
+
+.logo__icon {
+margin-right: 9px;
+}
