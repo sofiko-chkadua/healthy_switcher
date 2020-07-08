@@ -1,41 +1,36 @@
 .contacts {
 display: flex;
 justify-content: space-between;
-width: 915px;
+min-width: 915px;
 margin: 0 auto;
 }
 
 .contact {
 width: 245px;
-height: 95px;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 30px;
+}
+
+.contact__icon {
+background-repeat: no-repeat;
+background-size: cover;
+width: 26px;
+height: 26px;
+margin: 0 auto;
+margin-bottom: 16px;
 }
 
 .contact__icon_watch {
 background-image: url(../../images/ic_watch_later.svg);
-background-repeat: no-repeat;
-background-size: cover;
-width: 26.11px;
-height: 26px;
+
 }
 
 .contact__icon_near {
 background-image: url(../../images/ic_near_me.svg);
-background-repeat: no-repeat;
-background-size: cover;
-width: 26.11px;
-height: 26px;
+
 }
 
 .contact__icon_call {
 background-image: url(../../images/ic_call.svg);
-background-repeat: no-repeat;
-background-size: cover;
-width: 26.11px;
-height: 26px;
+
 }
  
 .contact__title {
@@ -44,12 +39,16 @@ font-weight: 500;
 font-size: 16px;
 line-height: 30px;
 text-align: center;
+margin: 0;
 }
 
 .contact__subtitle {
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 60px;
+line-height: 30px;
 color: #999999;
+text-align: center;
+margin: 0;
+
 }

@@ -1,7 +1,17 @@
 .logo {
-display: flex;
+width: 207px;
+height: 24px;
 }
 
-.logo__icon {
-margin-right: 9px;
+.logo_footer {
+
+}
+
+.logo_header {
+    
+}
+
+.logo__container {
+    display: flex;
+    align-items: center;
 }

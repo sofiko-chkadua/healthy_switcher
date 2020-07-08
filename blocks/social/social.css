@@ -1,44 +1,78 @@
 .social {
-width: 1100px;
 margin: 0 auto;
+
 }
 
 .social__title {
-
+margin-top: 120px;
 }
 
 .social-cards {
 display: flex;
 justify-content: space-between;
+margin-top: 60px;
+margin-bottom: 120px;
+min-width: 1110px;
 }
 
 .social__item {
 width: 350px;
-height: 330px;
+background-color: #252525;
+border-radius: 6px;
 }
 
 .social__header {
 
 }
 
-.social__social-info {
+.social__social-info-big {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 25px 23px 25px;
+}
 
+.social__social-info {
+display: flex;
+justify-content: space-between;
 }
 
 .social__icon {
+width: 24px;
+height: 24px;
+background-size: cover;
+background-repeat: no-repeat;
+}
 
+.social__icon-twitter {
+background-image: url(../../images/ic_twitter.svg);
+}
+
+.social__icon-instagram {
+background-image: url(../../images/ic_instagram.svg);
+}
+
+.social__icon-facebook {
+background-image: url(../../images/ic_facebook.svg);
 }
 
 .social__social-name {
-
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #BFBFBF;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .social__button {
-
+    color: #737373;
+    padding:  0 18px;
 }
 
 .social__line {
-
+height: 2px;
+background: #303030;
 }
 
 .social__description {
@@ -46,19 +80,41 @@ height: 330px;
 }
 
 .social__date {
-
+margin-top: 20px;
+margin-left: 30px;
+margin-right: 40px;
+font-weight: 500;
+font-size: 14px;
+line-height: 60px;
+color: #737373;
 }
 
 .social__text {
-
+margin-top: 10px;
+margin-left: 30px;
+margin-right: 40px;
+min-width: 280px;
+font-weight: 500;
+font-size: 14px;
+line-height: 30px;
+color: rgba(255, 255, 255, 0.7);
 }
 
 .social__copywright {
+margin-top: 10px;
+margin-left: 30px;
+margin-right: 40px;
+font-weight: 500;
+font-size: 14px;
+line-height: 30px;
+color: #34C759;
 
 }
 
 .social__photos {
-
+display: flex;
+flex-wrap: wrap;
+min-height: 239px;
 }
 
 .social__strelka {
@@ -66,6 +122,20 @@ height: 330px;
 }
 
 .social__photo {
-    
+display: block;
+
 }
 
+.social__butt {
+    border: 2px solid #303030;
+    border-radius: 100%;
+    padding: 7px;
+    background-color: #262626;
+    margin-right: 20px;
+}
+
+.social__date_other {
+line-height: 60px;
+margin-top: 0;
+
+}

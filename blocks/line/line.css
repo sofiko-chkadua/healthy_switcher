@@ -1,0 +1,19 @@
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+.line__line {
+width: 56px;
+height: 2px;
+background-color: #34C759;
+margin: 0 auto;
+}
+
+.line_work {
+margin-left: 24px;
+}
+
+.line_work-active {
+background-color: #191919;
+}
