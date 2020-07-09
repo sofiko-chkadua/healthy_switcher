@@ -15,47 +15,45 @@ margin-bottom: 120px;
 min-width: 1110px;
 }
 
-.social__item {
+.social__card {
 width: 350px;
 background-color: #252525;
 border-radius: 6px;
+position: relative;
 }
 
-.social__header {
 
-}
-
-.social__social-info-big {
+.social__card-social-info-big {
     display: flex;
     justify-content: space-between;
     padding: 25px 25px 23px 25px;
 }
 
-.social__social-info {
+.social__card-social-info {
 display: flex;
 justify-content: space-between;
 }
 
-.social__icon {
+.social__card-icon {
 width: 24px;
 height: 24px;
 background-size: cover;
 background-repeat: no-repeat;
 }
 
-.social__icon-twitter {
+.social__card-icon-twitter {
 background-image: url(../../images/ic_twitter.svg);
 }
 
-.social__icon-instagram {
+.social__card-icon-instagram {
 background-image: url(../../images/ic_instagram.svg);
 }
 
-.social__icon-facebook {
+.social__card-icon-facebook {
 background-image: url(../../images/ic_facebook.svg);
 }
 
-.social__social-name {
+.social__card-social-name {
     font-weight: 500;
     font-size: 14px;
     line-height: 30px;
@@ -65,21 +63,18 @@ background-image: url(../../images/ic_facebook.svg);
     align-items: center;
 }
 
-.social__button {
+.social__card-button {
     color: #737373;
     padding:  0 18px;
 }
 
-.social__line {
+.social__card-line {
 height: 2px;
 background: #303030;
 }
 
-.social__description {
 
-}
-
-.social__date {
+.social__card-date {
 margin-top: 20px;
 margin-left: 30px;
 margin-right: 40px;
@@ -89,7 +84,7 @@ line-height: 60px;
 color: #737373;
 }
 
-.social__text {
+.social__card-text {
 margin-top: 10px;
 margin-left: 30px;
 margin-right: 40px;
@@ -100,7 +95,7 @@ line-height: 30px;
 color: rgba(255, 255, 255, 0.7);
 }
 
-.social__copywright {
+.social__card-copywright {
 margin-top: 10px;
 margin-left: 30px;
 margin-right: 40px;
@@ -111,22 +106,20 @@ color: #34C759;
 
 }
 
-.social__photos {
+.social__card-photos {
 display: flex;
 flex-wrap: wrap;
 min-height: 239px;
 }
 
-.social__strelka {
 
-}
 
-.social__photo {
+.social__card-photo {
 display: block;
 
 }
 
-.social__butt {
+.social__card-butt {
     border: 2px solid #303030;
     border-radius: 100%;
     padding: 7px;
@@ -134,8 +127,15 @@ display: block;
     margin-right: 20px;
 }
 
-.social__date_other {
+.social__card-date_other {
 line-height: 60px;
 margin-top: 0;
 
+}
+
+.social__card-arrow {
+    background-color: #34C759;
+    position: absolute;
+    top: 131px;
+    right: 152px;
 }

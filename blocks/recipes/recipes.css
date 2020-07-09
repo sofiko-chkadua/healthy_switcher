@@ -3,15 +3,35 @@
  margin: 0 auto;
 }
 
-.recipes__container_main {
+.recipes__container {
 margin-top: 60px;
 display: flex;
 justify-content: space-between;
 }
-.recipes__container {
+.recipes__tools {
     display: flex;
     justify-content: space-between;
 margin: 10px 26px 20px 30px;
+}
+
+.recipes__back {
+    background-color: #000000;
+    border-radius: 6px;
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    opacity: 0.3;
+    color: #FFFFFF;
+}
+
+.recipes__back_mini {
+    padding: 0 5px;
+
+}
+
+.recipes__back_mini_active {
+    opacity: 1;
 }
 
 .recipes__button {
@@ -22,6 +42,8 @@ text-align: center;
 letter-spacing: 1.25px;
 text-transform: uppercase;
 color: #FFFFFF;
+opacity: 1;
+
 }
 
 .recipes__title {
@@ -37,14 +59,14 @@ background-size: contain;
 background-repeat: no-repeat;
 
 }
-.recides__description-breakfast {
+.recides__breakfast-description {
  padding: 30px 30px 60px 30px;
  display: flex;
 flex-direction: column;
 align-items: center;
 }
 
-.recipes__strelka {
+.recipes__breakfast-arrow-container {
 align-self: flex-end;
 border-radius: 100%;
 border-style: none;
@@ -54,7 +76,7 @@ padding: 9px;
 
 }
 
-.recipes__strelochka {
+.recipes__arrow{
 background-image: url(../../images/breakf_arrow.png);
 background-repeat: no-repeat;
 background-size: contain;
@@ -64,16 +86,18 @@ height: 12px;
 
 }
 
-.recipes__date_breakfast {
+.recipes__breakfast-date {
 padding-bottom: 25px;
 font-weight: 500;
 font-size: 14px;
 line-height: 30px;
 color: #FFFFFF;
+display: flex;
+align-items: center;
 
 }
 
-.recipes__text {
+.recipes__breakfast-text {
 padding-bottom: 45px;
 font-weight: 500;
 font-size: 24px;
@@ -84,7 +108,7 @@ max-width: 411px;
 
 }
 
-.recipes__author {
+.recipes__breakfast-author {
     padding-bottom: 60px;
     font-weight: 500;
 font-size: 14px;
@@ -101,7 +125,7 @@ min-width: 139px;
 .recipes__views {
 margin: 0;
 font-size: 12px;
-line-height: 30px;
+/* line-height: 30px; */
 color: #FFFFFF;
 display: flex;
 align-items: center;
@@ -110,7 +134,7 @@ align-items: center;
 .recipes__comments {
     margin: 0;
     font-size: 12px;
-    line-height: 30px;
+    /* line-height: 30px; */
     color: #FFFFFF;  
     display: flex;
 align-items: center;
@@ -135,11 +159,7 @@ align-items: center;
 }
 
 
-.recipes__icon {
-
-}
-
-.recipes__others {
+.recipes__items {
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -163,7 +183,7 @@ background-repeat: no-repeat;
 background-color: #34C759;
 }
 
-.recipes__description {
+.recipes__item-description {
     margin-left: 30px;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -197,6 +217,9 @@ min-width: 137px;
 
 .recipes__date_lunch {
 margin: 0;
+font-weight: 500;
+font-size: 12px;
+line-height: 25px;
 }
 
 .recipes__date_dinner {

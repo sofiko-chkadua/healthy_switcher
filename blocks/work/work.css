@@ -21,7 +21,7 @@ border-radius: 6px;
     margin-top: 90px;
 }
 
-.work__header {
+.work__item-header {
 margin-left: 24px;
 margin-right: 24px;
 font-weight: 500;
@@ -30,7 +30,7 @@ line-height: 27px;
 text-transform: capitalize;
 }
 
-.work__text {
+.work__item-text {
  margin-left: 24px;
 margin-right: 24px;
 margin-top: 36px;

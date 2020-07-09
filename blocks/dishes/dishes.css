@@ -20,13 +20,14 @@ width: 350px;
 background-color: #252525;
 border-radius: 6px;
 margin-bottom: 30px;
+position: relative;
 }
 
-.dishes__description {
+.dishes__card-description {
 padding: 29px 30px 24px 30px;
 }
 
-.dishes__header {
+.dishes__card-header {
 font-weight: 500;
 font-size: 32px;
 line-height: 30px;
@@ -34,29 +35,29 @@ color: #D9D9D9;
 margin: 0;
 }
 
-.dishes__subtitle {
+.dishes__card-subtitle {
 font-size: 12px;
 line-height: 16px;
 color: #A4A8B2;
 }
 
-.dishes__text {
+.dishes__card-text {
 font-size: 13px;
 line-height: 18px;
 color: #85878C;
 
 }
 
-.dishes__stars-and-button {
+.dishes__card-tools {
 display: flex;
 justify-content: space-between;
 }
 
-.dishes__rating {
+.dishes__card-stars {
 display: flex;
 }
 
-.dishes__star {
+.dishes__card-star {
 background-image: url(../../images/icon-grey.svg);
 background-repeat: no-repeat;
 background-size: contain;
@@ -64,29 +65,29 @@ width: 24px;
 height: 26px;   
 }
 
-.dishes__star_half {
+.dishes__card-star_half {
 background-image: url(../../images/icon-grey-half.svg);   
 }
 
-.dishes__star_empty {
+.dishes__card-star_empty {
  background-image: url(../../images/icon-grey-border.svg);   
 }
 
-.dishes__star_active {
+.dishes__card-star_active {
 background-image: url(../../images/icon-yellow.svg);
 
 }
 
-.dishes__star_half-active {
+.dishes__card-star_half-active {
 background-image: url(../../images/icon-yellow-half.svg);
 }
 
-.dishes__star_empty-active {
+.dishes__card-star_empty-active {
 background-image: url(../../images/icon-yellow-border.svg);
 
 }
 
-.dishes__number {
+.dishes__card-number {
 font-weight: 900;
 font-size: 12px;
 line-height: 30px;
@@ -94,26 +95,41 @@ letter-spacing: 1.5px;
 color: #B3B3B3;
 }
 
-.dishes__button {
+.dishes__card-button {
 padding:  0 30px;
 color: rgba(255, 255, 255, 0.5);
 }
 
-.dishes__button_active {
+.dishes__card-button_active {
 background-color: #34C759;
 border: none;
 color: #252525;
 }
 
 
-.dishes__container {
-display: flex;
-justify-content: space-between;
-}
-
-.dishes__stars-and-number {
+.dishes__card-rating {
 display: flex;
 justify-content: space-between;
 min-width: 155px;
 align-items: center;
+}
+
+.dishes__card-share {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    border-style: none;
+    background-color: #262626;
+    padding: 9px;
+    right: 24px;
+    top: 24px;
+}
+
+.dishes__card-share-icon {
+background-image: url(../../images/ic_share2.png);
+width: 20px;
+height: 20px;
+background-size: contain;
 }
