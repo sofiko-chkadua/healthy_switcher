@@ -1,54 +1,9 @@
 .contacts {
-display: flex;
-justify-content: space-between;
-min-width: 915px;
-margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    /* min-width в целом он, только не поняла какую задачу ты тут решаешь:) */
+    margin: 0 auto;
 }
 
-.contact {
-width: 245px;
-}
 
-.contact__icon {
-background-repeat: no-repeat;
-background-size: cover;
-width: 26px;
-height: 26px;
-margin: 0 auto;
-margin-bottom: 16px;
-}
-
-.contact__icon_watch {
-background-image: url(../../images/ic_watch_later.svg);
-
-}
-
-.contact__icon_near {
-background-image: url(../../images/ic_near_me.svg);
-
-}
-
-.contact__icon_call {
-background-image: url(../../images/ic_call.svg);
-
-}
- 
-.contact__title {
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 30px;
-text-align: center;
-margin: 0;
-}
-
-.contact__subtitle {
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 30px;
-color: #999999;
-text-align: center;
-margin: 0;
-
-}
+/* для  contact  нуден отдельный файл contact.css*/

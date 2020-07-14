@@ -1,49 +1,44 @@
-.work {
-background-color:#191919;
-margin: 0 auto;
-color: #FFFFFF;
-}
-
 .work__cards {
-display: flex;
-justify-content: space-between;
-margin-top: 90px;
-}
-
-.work__item {
-width: 255px;
-height: 206px;
-background-color: #252525;
-border-radius: 6px;
-}
-
-.work__title {
+    display: flex;
+    justify-content: space-between;
     margin-top: 90px;
 }
 
+.work__item {
+    /* max-width */
+    max-width: 255px;
+    /* убераем height на случай если контент будет больше и делаем нижный отступ падингом */
+    background-color: #252525;
+    border-radius: 6px;
+}
+
+.work__item-description {
+    padding: 24px 24px 42px 24px;
+}
+
 .work__item-header {
-margin-left: 24px;
-margin-right: 24px;
-font-weight: 500;
-font-size: 22px;
-line-height: 27px;
-text-transform: capitalize;
+    /* марджины не нужны, нужно  сделать паддинго для work__item */
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: capitalize;
 }
 
 .work__item-text {
- margin-left: 24px;
-margin-right: 24px;
-margin-top: 36px;
-font-size: 13px;
-line-height: 18px;
-color: rgba(255, 255, 255, 0.5);
+    /* ml mr не нужны, паддингом для work__item 
+    также как ты сделала в dishes__card-description
+    */
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .work__item_active {
-background-color: #34C759;
-color: #191919;
+    background-color: #34C759;
+    color: #191919;
 }
 
 .work__text_active {
-color: #191919;  
+    color: #191919;
 }

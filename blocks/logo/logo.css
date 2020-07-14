@@ -1,17 +1,3 @@
 .logo {
 width: 207px;
-height: 24px;
-}
-
-.logo_footer {
-
-}
-
-.logo_header {
-    
-}
-
-.logo__container {
-    display: flex;
-    align-items: center;
 }

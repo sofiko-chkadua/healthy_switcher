@@ -1,136 +1,126 @@
 .dishes {
-background-color:#191919;
-
-}
-
-.dishes__title {
-margin-top: 120px;
+    background-color: #191919;
 }
 
 .dishes__cards {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-margin: 0 auto;
-margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin не нужен */
+    margin-top: 60px;
 }
 
 .dishes__card {
-width: 350px;
-background-color: #252525;
-border-radius: 6px;
-margin-bottom: 30px;
-position: relative;
+    /* max-width: ; */
+    max-width: 350px;
+    background-color: #252525;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .dishes__card-description {
-padding: 29px 30px 24px 30px;
+    padding: 29px 30px 24px 30px;
 }
 
 .dishes__card-header {
-font-weight: 500;
-font-size: 32px;
-line-height: 30px;
-color: #D9D9D9;
-margin: 0;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 30px;
+    color: #D9D9D9;
+    margin: 0;
 }
 
 .dishes__card-subtitle {
-font-size: 12px;
-line-height: 16px;
-color: #A4A8B2;
-margin: 0 auto;
-letter-spacing: -0.15px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A4A8B2;
+    margin: 0 auto;
+    letter-spacing: -0.15px;
 }
 
 .dishes__card-text {
-font-size: 13px;
-line-height: 18px;
-color: #85878C;
-
+    font-size: 13px;
+    line-height: 18px;
+    color: #85878C;
 }
 
 .dishes__card-tools {
-display: flex;
-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .dishes__card-stars {
-display: flex;
+    display: flex;
+    margin-right: 14px;
 }
 
 .dishes__card-star {
-background-image: url(../../images/icon-grey.svg);
-background-repeat: no-repeat;
-background-size: contain;
-width: 24px;
-height: 26px;   
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 26px;
 }
 
-.dishes__card-star_half {
-background-image: url(../../images/icon-grey-half.svg);   
+
+/* Давай сделаем один мод _type у .dishes__card-star
+и значение у него
+_type_full-active
+_type_half-active
+
+_type_half-grey
+_type_full-grey
+
+_type_empty-active
+_type_empty-grey
+
+или что-то типа того чтобы не делать комбинации модов тут а то ои сейчас очень сильно завязаны на порядок
+*/
+
+.dishes__card-star_type_half-grey {
+    background-image: url(../../images/icon-grey-half.svg);
 }
 
-.dishes__card-star_empty {
- background-image: url(../../images/icon-grey-border.svg);   
+.dishes__card-star_type_empty-grey {
+    background-image: url(../../images/icon-grey-border.svg);
 }
 
-.dishes__card-star_active {
-background-image: url(../../images/icon-yellow.svg);
-
+.dishes__card-star_type_full-active {
+    background-image: url(../../images/icon-yellow.svg);
 }
 
-.dishes__card-star_half-active {
-background-image: url(../../images/icon-yellow-half.svg);
+.dishes__card-star_type_half-active {
+    background-image: url(../../images/icon-yellow-half.svg);
 }
 
-.dishes__card-star_empty-active {
-background-image: url(../../images/icon-yellow-border.svg);
-
+.dishes__card-star__type_empty-active {
+    background-image: url(../../images/icon-yellow-border.svg);
 }
 
 .dishes__card-number {
-font-weight: 900;
-font-size: 12px;
-line-height: 30px;
-letter-spacing: 1.5px;
-color: #B3B3B3;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    color: #B3B3B3;
 }
 
-.dishes__card-button {
-        border-radius: 43px;
-        letter-spacing: 0.2em;
-        font-weight: 900;
-        font-size: 10px;
-        line-height: 40px;
-        text-align: center;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        background-color: #262626;
-        border: 2px solid #303030;
-padding:  0 30px;
-color: rgba(255, 255, 255, 0.5);
+.dishes__card-star_type_full-grey {
+    background-image: url(../../images/icon-grey.svg);
 }
 
-.dishes__card-button_active {
-background-color: #34C759;
-border: none;
-color: #252525;
-}
 
+/* про кнопку писала в intro */
 
 .dishes__card-rating {
-display: flex;
-justify-content: space-between;
-min-width: 155px;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-width: 155px;
+    align-items: center;
 }
 
 .dishes__card-share {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 100%;
     border-style: none;
     background-color: rgba(0, 0, 0, 0.3);
@@ -140,8 +130,8 @@ align-items: center;
 }
 
 .dishes__card-share-icon {
-background-image: url(../../images/ic_share2.png);
-width: 20px;
-height: 20px;
-background-size: contain;
+    background-image: url(../../images/ic_share2.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
 }

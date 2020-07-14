@@ -1,5 +1,9 @@
 .page {
- font-family: 'HelveticaNeue';
+/* Helvetica Neue  ты задекларировала с пробелом, работает и без  потому что ссылается на почти одноименный локальный маковый шрифт*/
+/* и еще нужно показать что делать если  не подгрузился шрифт совсем - font-family: 'HelveticaNeue', Aria, sans-serif; - самая распространенная комба нативных операционных шрифтов*/
+/* sans-serif не конкретный шрифт, а вид начерертания и будет взят типичный представитель такого начертания из операционки  - https://stackoverflow.com/questions/1631098/css-is-helvetica-the-default-sans-serif-font-on-mac-and-arial-the-default-san*/
+/* https://puzzleweb.ru/css/6_fonts3.php */
+ font-family: 'Helvetica Neue', Arial, sans-serif;
  background-image: url(../../images/page.png);
  background-color:#191919;
  background-size: contain;

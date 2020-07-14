@@ -1,66 +1,57 @@
 .chefs {
-background-color:#191919;
-margin: 0 auto;
+    background-color: #191919;
+    margin: 0 auto;
 }
 
 .chefs__container {
-display: flex;
-justify-content: space-between;
-margin-top: 38px;
-width: 1110px;
-}
-
-.chefs__title {
-margin-top: 120px;
-}
-
-.chefs__line {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+    /* width не нужен */
 }
 
 .chefs__chef {
-width: 350px;
+    /* max-width: 350px;
+    width: 100%; */
+    max-width: 350px;
+    width: 100%;
 }
 
 .chefs__photos {
-display: flex;
-justify-content: space-between;
-}
-
-.chefs__photo {
-
-}
-
-.chefs__name {
-font-weight: 500;
-font-size: 18px;
-line-height: 22px;
-color: #FFFFFF;
-margin: 0;
-}
-
-.chefs__job {
-font-size: 12px;
-line-height: 16px;
-font-weight: normal;
-color: rgba(255, 255, 255, 0.5);
-margin-top: 5px;
-margin-bottom: 35px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .chefs__text {
+    align-items: center;
+}
+
+.chefs__name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.chefs__job {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
 }
 
 .chefs__photo {
-    display: block;
-    display: block;
+    /* block не нужен ни один не второй когда родитель flex */
     width: 65px;
     height: 65px;
     margin-right: 24px;
-    margin-bottom: 24px;
+    /* этот марджин лучше сделать margin у  chefs__descripton */
 }
 
 .chefs__descripton {
     display: flex;
     align-items: center;
+    margin-bottom: 24px;
 }

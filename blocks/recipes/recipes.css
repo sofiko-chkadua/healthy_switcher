@@ -1,18 +1,18 @@
 .recipes {
- background-color:#191919;
- margin: 0 auto;
+    background-color: #191919;
+    margin: 0 auto;
 }
 
 .recipes__container {
-margin-top: 60px;
-display: flex;
-justify-content: space-between;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .recipes__tools {
-display: flex;
-justify-content: space-between;
-margin: 10px 26px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .recipes__tools_sweets {
@@ -24,207 +24,184 @@ margin: 10px 26px 20px 30px;
     border-radius: 6px;
     padding: 0 15px;
     text-align: center;
-    display: flex;
-    align-items: center;
     color: #FFFFFF;
 }
 
 .recipes__background-for-meal_mini {
     padding: 0 5px;
-
 }
 
 .recipes__background-for-meal_mini_active {
-background-color: rgba(0, 0, 0);
+    background-color: rgba(0, 0, 0);
 }
 
 .recipes__meal {
-font-weight: 900;
-font-size: 10px;
-line-height: 25px;
-text-align: center;
-letter-spacing: 1.25px;
-text-transform: uppercase;
-color: #FFFFFF;
-}
-
-.recipes__title {
-margin-top: 120px;
-margin-bottom: 90px;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .recipes__breakfast {
-min-width: 540px;
-min-height: 510px;
-background-image: url(../../images/breakfast.png);
-background-size: contain;
-background-repeat: no-repeat;
-
+    min-width: 540px;
+    min-height: 510px;
+    background-image: url(../../images/breakfast.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 .recides__breakfast-description {
- padding: 30px 30px 60px 30px;
- display: flex;
-flex-direction: column;
-align-items: center;
+    padding: 30px 30px 60px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .recipes__breakfast-arrow-container {
-align-self: flex-end;
-border-radius: 100%;
-border-style: none;
-background-color: rgba(0, 0, 0, 0.3);
-padding: 9px;
-
-
+    align-self: flex-end;
+    border-radius: 100%;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 9px;
 }
 
-.recipes__breakfast-arrow{
-background-image: url(../../images/breakf_arrow.png);
-background-repeat: no-repeat;
-background-size: contain;
-transform: matrix(-1, 0, 0, 1, 0, 0);
-width: 12px;
-height: 12px;
-
+.recipes__breakfast-arrow {
+    background-image: url(../../images/breakf_arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 12px;
+    height: 12px;
 }
 
 .recipes__breakfast-date {
-font-weight: 500;
-font-size: 14px;
-line-height: 30px;
-color: #FFFFFF;
-display: flex;
-align-items: center;
-margin: 0;
-margin-top: 65px;
-
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 65px;
 }
 
 .recipes__breakfast-text {
-font-weight: 500;
-font-size: 24px;
-line-height: 40px;
-text-align: center;
-color: #FFFFFF;
-max-width: 411px;
-margin: 0;
-margin-top: 25px;
-
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 411px;
+    margin: 0;
+    margin-top: 25px;
 }
 
 .recipes__breakfast-author {
     font-weight: 500;
-font-size: 14px;
-line-height: 30px;
-color: #FFFFFF;
-margin: 0;
-margin-top: 45px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-top: 45px;
 }
 
 .recipes__statistics {
-display: flex;
-justify-content: space-between;
-min-width: 139px;
-margin: 0;
-margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 139px;
+    margin: 0;
+    margin-top: 60px;
 }
 
-.recipes__views {
-margin: 0;
-font-size: 12px;
-/* line-height: 30px; */
-color: #FFFFFF;
-display: flex;
-align-items: center;
-}
-
-.recipes__comments {
+.recipes__mark {
     margin: 0;
     font-size: 12px;
     /* line-height: 30px; */
-    color: #FFFFFF;  
+    color: #FFFFFF;
     display: flex;
-align-items: center;
+    align-items: center;
 }
 
-.recipes__views:before {
+
+/* recipes__views почти равено по стилям  recipes__comments
+давай лучше .recipes__mark {} будет содержать все общее для него  и для :after
+
+а recipes__mark_type_views:before recipes__mark_type_comments:before различие в строку  про content: url...
+
+*/
+
+.recipes__mark:before {
+    margin-right: 12px;
+    width: 22px;
+    height: 15px;
+    background-size: contain;
+}
+
+.recipes__mark_type_views:before {
     content: url(../../images/ic_remove_red_eye.png);
-    width: 22px;
-    height: 15px;
-    background-size: contain;
-    margin-right: 12px;
-
 }
 
-.recipes__comments:before {
+.recipes__mark_type_comments:before {
     content: url(../../images/ic_question_answer.png);
-    width: 22px;
-    height: 15px;
-    background-size: contain;
     margin-right: 12px;
-
 }
-
 
 .recipes__items {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-height: 510px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* высоту не нужно */
+    /* height: 510px; */
 }
 
 .recipes__item {
-width: 540px;
-height: 150px;
-background-color: #252525;
-border-radius: 6px;
-}
-
-.recipes__item_with-back {
-background-image: url(../../images/lunch.svg);
-background-size: cover;
-background-repeat: no-repeat;
-}
-
-.recipes__item_active {
-background-color: #34C759;
+    /* ни высоты ни ширины */
+    /* все мерджины для внутренностей от краев убери и сделай паддингов для recipes__item */
+    /* width: 540px; */
+    /* height: 150px; */
+    background-color: #252525;
+    border-radius: 6px;
 }
 
 .recipes__item-description {
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    font-weight: 500;
-font-size: 16px;
-line-height: 30px;
-color: #FFFFFF;
-max-width: 505px;   
+    padding: 30px 25px 25px 30px;
 }
 
-.recipes__item-description_sweets {
+.recipes__item_with-back {
+    background-image: url(../../images/lunch.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recipes__item_active {
+    background-color: #34C759;
+}
+
+.recipes__item-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    max-width: 505px;
+    margin: 0;
+}
+
+.recipes__item-text_sweets {
     color: #252525;
 }
 
 .recipes__container-for-date {
-display: flex;
-justify-content: space-between;
-min-width: 147px;
-
-
+    display: flex;
+    /* вместо сл 2 строк просто margin right для recipes__background-for-meal */
+    justify-content: space-between;
+    min-width: 147px;
 }
 
 .recipes__container-for-statistics {
-display: flex;
-justify-content: space-between;
-min-width: 137px;
-
-}
-
-
-.recipes__date_lunch {
-margin: 0;
-font-weight: 500;
-font-size: 12px;
-line-height: 25px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 137px;
 }

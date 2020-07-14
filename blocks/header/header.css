@@ -1,37 +1,50 @@
 .header__content {
-display: flex;
-justify-content: space-between;
-margin: 0 auto;
-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    /* max-width */
+    max-width: 1100px;
 }
 
-.header__line {
-min-height: 2px;
-background-color: #FFFFFF;
-opacity: 0.1;
+
+/* время сделать это через превдоэлемент :after и убрать из html */
+.header:after {
+    content: "";
+    display: block;
+    min-height: 2px;
+    background-color: #FFFFFF;
+    opacity: 0.1;
 }
 
 .header__links {
-display: flex;
-justify-content: space-between;
-align-items: center;
-list-style: none;
-width: 303px;
-margin: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    /* ширину не высталяй жесткую, а если ссылок станет больше? начнут переполнять */
+    /* justify-content: space-between; тоже не нужен, лучше сделать кликабельную облась шире у ссылки через падинг */
 }
 
 .header__link {
-text-decoration: none;
-color: #FFFFFF;
-font-weight: bold;
-font-size: 14px;
-line-height: 90px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 38px;
+    line-height: 90px;
+     /* ОСТАВИЛА ЛХ ПОТОМУ ЧТО ИНАЧЕ ХЭДЕР ПОЛУЧАЕТСЯ МАЛЕНЬКИЙ И ССЫЛКИ НЕ КЛИКАБЕЛЬНЫЕ*/
+    /* не понадобится такой lh когда выставишь отступы падингами */
+    /* нужен падинг для кликабельной области чтобы ссылка работала даже когда наводишь рядом, а не только на текст*/
+    /* черещ падинги же делать эти отпупы между ссылками а не через space-between*/
 }
 
 .header__link_active {
-color: #34C759;
+    color: #34C759;
 }
 
-.logo_header {
-    display: block;
+.header__logo {
+margin-top: -6px;
+
 }
