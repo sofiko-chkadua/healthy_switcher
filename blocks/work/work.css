@@ -5,9 +5,7 @@
 }
 
 .work__item {
-    /* max-width */
     max-width: 255px;
-    /* убераем height на случай если контент будет больше и делаем нижный отступ падингом */
     background-color: #252525;
     border-radius: 6px;
 }
@@ -17,7 +15,6 @@
 }
 
 .work__item-header {
-    /* марджины не нужны, нужно  сделать паддинго для work__item */
     font-weight: 500;
     font-size: 22px;
     line-height: 27px;
@@ -25,9 +22,6 @@
 }
 
 .work__item-text {
-    /* ml mr не нужны, паддингом для work__item 
-    также как ты сделала в dishes__card-description
-    */
     margin-top: 24px;
     font-size: 13px;
     line-height: 18px;

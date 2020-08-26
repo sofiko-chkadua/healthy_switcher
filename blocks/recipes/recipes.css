@@ -119,19 +119,10 @@
 .recipes__mark {
     margin: 0;
     font-size: 12px;
-    /* line-height: 30px; */
     color: #FFFFFF;
     display: flex;
     align-items: center;
 }
-
-
-/* recipes__views почти равено по стилям  recipes__comments
-давай лучше .recipes__mark {} будет содержать все общее для него  и для :after
-
-а recipes__mark_type_views:before recipes__mark_type_comments:before различие в строку  про content: url...
-
-*/
 
 .recipes__mark:before {
     margin-right: 12px;
@@ -153,20 +144,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* высоту не нужно */
-    /* height: 510px; */
 }
 
 .recipes__item {
-    /* ни высоты ни ширины */
-    /* все мерджины для внутренностей от краев убери и сделай паддингов для recipes__item */
-    /* width: 540px; */
-    /* height: 150px; */
     background-color: #252525;
     border-radius: 6px;
-}
-
-.recipes__item-description {
     padding: 30px 25px 25px 30px;
 }
 
@@ -195,7 +177,6 @@
 
 .recipes__container-for-date {
     display: flex;
-    /* вместо сл 2 строк просто margin right для recipes__background-for-meal */
     justify-content: space-between;
     min-width: 147px;
 }
@@ -204,4 +185,24 @@
     display: flex;
     justify-content: space-between;
     min-width: 137px;
+}
+
+.recipes__date {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 25px;
+    margin: 0;
+}
+
+.recipes__date_theme_dark {
+    color: #1A1A1A;
+}
+
+.recipes__date_theme_light {
+    color: #FFFFFF;
+}
+
+.recipes__date_theme_grey {
+    color: #B3B3B3;
 }

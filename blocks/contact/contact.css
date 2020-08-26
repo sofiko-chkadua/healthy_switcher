@@ -1,24 +1,15 @@
 .contact {
-    /* min-width */
     min-width: 245px;
 }
 
 .contact__icon {
     background-repeat: no-repeat;
-    /* нужен background-size: contain; потому что cover обезает неидеальные иконки а нам нужно вмещать их полностью*/
     background-size: contain;
     width: 26px;
     height: 26px;
     margin: 0 auto;
     margin-bottom: 16px;
 }
-
-
-/* давай сделаем модификатор сложный type 
-contact__icon_type_watch
-contact__icon_type_near
-contact__icon_type_call
-*/
 
 .contact__icon_type_watch {
     background-image: url(../../images/ic_watch_later.svg);
@@ -33,7 +24,6 @@ contact__icon_type_call
 }
 
 .contact__title {
-    /* не нужно normal */
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
@@ -42,7 +32,6 @@ contact__icon_type_call
 }
 
 .contact__subtitle {
-    /* не нужно normal */
     font-weight: 500;
     font-size: 14px;
     line-height: 30px;

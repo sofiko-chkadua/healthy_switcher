@@ -11,12 +11,6 @@
 <body class="page">
     <header class="header">
         <div class="header__content">
-            <!-- 
-                logo__container снаружи блока logo - недопустимо
-                logo__container кажется вообще не нужен, убери обертку и добавь align-items: center; для header__content
-                logo_header -> _header оч плохой модификатор, никогда не привязывайся к месту где будешь использовать блок
-                да и мод в целом тут сомнительный и ненуждный, запиши display: block прям в logo
-            -->
             <img class="logo header__logo" alt="healthy switcher" src="./images/logo.png">
             <nav>
                 <ul class="header__links">
@@ -54,11 +48,7 @@
             </div>
         </section>
 
-        <!-- about__margin - это элемент а значит может быть только внутри блока-->
-        <!-- тем более на него стилей нет -->
         <section class="about">
-            <!-- это не div а h* -->
-            <!-- about__title пустой -->
             <h2 class="section-title" text-content="ABOUT ">The Basics Of Healthy Food</h2>
             <p class="about__text ">In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.</p>
             <div class="about__carusel ">
@@ -72,29 +62,29 @@
         </section>
 
         <section class="work">
-            <h2 class="section-title line line_type_title" text-content="WORK">How it works</h2>
+            <h2 class="section-title" text-content="WORK">How it works</h2>
             <div class="work__cards">
                 <div class="work__item work__item_active">
                     <div class="work__item-description">
-                        <h3 class="work__item-header line">Pick meals</h3>
+                        <h3 class="work__item-header">Pick meals</h3>
                         <p class="work__item-text work__text_active">Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie options.</p>
                     </div>
                 </div>
                 <div class="work__item">
                     <div class="work__item-description">
-                        <h3 class="work__item-header line line_theme_dark">Choose how often</h3>
+                        <h3 class="work__item-header">Choose how often</h3>
                         <p class="work__item-text">Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!</p>
                     </div>
                 </div>
                 <div class="work__item">
                     <div class="work__item-description">
-                        <h3 class="work__item-header line line_theme_dark">Fast deliveries</h3>
+                        <h3 class="work__item-header">Fast deliveries</h3>
                         <p class="work__item-text">Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.</p>
                     </div>
                 </div>
                 <div class="work__item">
                     <div class="work__item-description">
-                        <h3 class="work__item-header line line_theme_dark">Tasty meals</h3>
+                        <h3 class="work__item-header">Tasty meals</h3>
                         <p class="work__item-text">Gobble makes cooking fast, so you have more time to unwind and be with family.</p>
                     </div>
                 </div>
@@ -102,10 +92,9 @@
         </section>
 
         <section class="dishes ">
-            <h2 class="section-title line line_type_title" text-content="DISHES ">Dish Of The Day</h2>
+            <h2 class="section-title" text-content="DISHES ">Dish Of The Day</h2>
 
             <div class="dishes__cards ">
-                <!-- <article> -->
                 <article class="dishes__card ">
                     <button class="dishes__card-share"><div class="dishes__card-share-icon"></div></button>
                     <img class="dishes__card-image" src="./images/dishes1.svg " alt="soup">
@@ -247,7 +236,7 @@
         </section>
 
         <section class="chefs">
-            <h2 class="section-title line line_type_title" text-content="CHEFS ">The Basics Of Healthy Food</h2>
+            <h2 class="section-title" text-content="CHEFS ">The Basics Of Healthy Food</h2>
             <div class="chefs__container">
                 <div class="chefs__chef">
                     <div class="chefs__descripton">
@@ -258,7 +247,6 @@
                         </div>
                     </div>
                     <div class="chefs__photos">
-                        <!-- chefs__image пустой класс -->
                         <img src="./images/gregory-image1.svg " alt="first dish from grerory">
                         <img src="./images/gregory-image2.svg " alt="seconfd dish from grerory">
                         <img src="./images/gregory-image3.svg " alt="third dish from grerory">
@@ -295,17 +283,15 @@
         </section>
 
         <section class="recipes">
-            <h2 class="section-title line line_type_title" text-content="RECIPES">Recipes From Our Chefs</h2>
+            <h2 class="section-title" text-content="RECIPES">Recipes From Our Chefs</h2>
             <div class="recipes__container">
 
                 <div class="recipes__breakfast">
-                    <!-- recides__breakfast-description не нужная обертка  — ОТ СОНИ оставила обертку для создания паддингов-->
                     <div class="recipes__breakfast-description">
                         <button class="recipes__breakfast-arrow-container "><div class="recipes__breakfast-arrow "></div></button>
                         <div class="recipes__background-for-meal ">
                             <div class="recipes__meal ">breakfast</div>
                         </div>
-                        <!-- recipes__date ниче не делает -->
                         <p class="recipes__breakfast-date">05 Jul 2016</p>
                         <p class="recipes__breakfast-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         <p class="recipes__breakfast-author">Jason Keller
@@ -319,25 +305,21 @@
 
                 <div class="recipes__items">
                     <div class="recipes__item">
-                        <div class="recipes__item-description">
                             <p class="recipes__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
                             <div class="recipes__tools ">
                                 <div class="recipes__container-for-date ">
                                     <div class="recipes__background-for-meal recipes__background-for-meal_mini ">
                                         <div class="recipes__meal">lunch</div>
                                     </div>
-                                    <!-- recipes__date ниче не делает -> recipes__date_lunch мод не нужен и сделай его отдельным блоком ОТ СОНИ - оставила recipes__date как отдельный блок, тк нужны были моды под разные темы (эти даты разных цветов)-->
                                     <p class="recipes__date recipes__date_theme_grey">07 Jan 2016</p>
                                 </div>
                                 <div class="recipes__container-for-statistics">
                                     <p class="recipes__mark  recipes__mark_type_views">275</p>
                                     <p class="recipes__mark  recipes__mark_type_comments">12</p>
                                 </div>
-                            </div>
                         </div>
                     </div>
                     <div class="recipes__item recipes__item_with-back">
-                        <div class="recipes__item-description">
                             <p class="recipes__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
                             <div class="recipes__tools ">
                                 <div class="recipes__container-for-date">
@@ -351,12 +333,10 @@
                                     <p class="recipes__mark  recipes__mark_type_comments">12</p>
                                 </div>
                             </div>
-                        </div>
                     </div>
 
 
                     <div class="recipes__item recipes__item_active">
-                        <div class="recipes__item-description">
                             <p class="recipes__item-text recipes__item-text_sweets">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
                             <div class="recipes__tools recipes__tools_sweets">
                                 <div class="recipes__container-for-date">
@@ -369,20 +349,15 @@
                                     <p class="recipes__mark  recipes__mark_type_views">275</p>
                                     <p class="recipes__mark  recipes__mark_type_comments">12</p>
                                 </div>
-                            </div>
                         </div>
                     </div>
         </section>
 
         <section class="social">
-            <h2 class="section-title line line_type_title" text-content="SOCIAL ">We in Social</h2>
+            <h2 class="section-title" text-content="SOCIAL ">We in Social</h2>
             <div class="social-cards ">
-                <!-- social__card   - элемент social, но ты через голову social-cards лезишь внутрь 
-                так что должно быть как-то так social-cards__item 
-                -->
-                <!-- article -->
                 <article class="social-cards__item">
-                    <div class="social-cards__item-header ">
+                    <div class="social-cards__item-header ">       
                         <div class="social__card-header-container ">
                             <div class="social__card-social-info ">
                                 <button class="social__card-button-for-icon "><div class="social__card-icon social__card-icon-twitter "></div></button>

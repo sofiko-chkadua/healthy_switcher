@@ -7,12 +7,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: 38px;
-    /* width не нужен */
 }
 
 .chefs__chef {
-    /* max-width: 350px;
-    width: 100%; */
     max-width: 350px;
     width: 100%;
 }
@@ -43,11 +40,9 @@
 }
 
 .chefs__photo {
-    /* block не нужен ни один не второй когда родитель flex */
     width: 65px;
     height: 65px;
     margin-right: 24px;
-    /* этот марджин лучше сделать margin у  chefs__descripton */
 }
 
 .chefs__descripton {

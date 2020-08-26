@@ -6,12 +6,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* margin не нужен */
     margin-top: 60px;
 }
 
 .dishes__card {
-    /* max-width: ; */
     max-width: 350px;
     background-color: #252525;
     border-radius: 6px;
@@ -62,21 +60,6 @@
     height: 26px;
 }
 
-
-/* Давай сделаем один мод _type у .dishes__card-star
-и значение у него
-_type_full-active
-_type_half-active
-
-_type_half-grey
-_type_full-grey
-
-_type_empty-active
-_type_empty-grey
-
-или что-то типа того чтобы не делать комбинации модов тут а то ои сейчас очень сильно завязаны на порядок
-*/
-
 .dishes__card-star_type_half-grey {
     background-image: url(../../images/icon-grey-half.svg);
 }
@@ -109,8 +92,6 @@ _type_empty-grey
     background-image: url(../../images/icon-grey.svg);
 }
 
-
-/* про кнопку писала в intro */
 
 .dishes__card-rating {
     display: flex;

@@ -1,19 +1,10 @@
-/* путые классики стирай */
-
-
-/* еще поставь тулзу форматирования контента  cssFormater в Vscode*/
-
 .intro__title {
-    /* max-width не нужен, у тебя intro__title - это h1,  он блочный и по ширине родителя всегда */
-    /* Давай пока font-family проставлять на body только один раз и все */
-    /* normal не нужно рауками прописывать - это по умолчанию во всех браузерах */
     font-weight: 300;
     font-size: 72px;
     line-height: 87px;
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: capitalize;
-    /* можноп поменять на mt и mb */
     margin-top: 80px;
     margin-bottom: 16px;
 }
@@ -22,7 +13,6 @@
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    /* max-width */
     max-width: 595px;
     font-weight: 300;
     font-size: 16px;
@@ -30,36 +20,6 @@
     text-align: center;
     opacity: 0.7;
 }
-
-
-/* должен быть блока button, вижу что размеры кнопки разные так что сделать нужно модификатор
-button_size_big {
-    padding: 25px 50px;
-}
-
-button_size_small {
-    padding: падинг из каторчки
-}
-
-button {
-    border, font-size, lh, font-weight, border-radius...
-}
-
-еще один мод для цвета:
-button_theme_active {
-    background: #34C759;
-    ...
-}
-
-Твоя кнопка в интро будет выглядеть как 
-class="button button_size_big button_theme_active intro__button"
-
-button - общее у всех кнопок
-button_size - размер
-button_theme - про цвет
-intro__button - margin 0 auto чтобы кнопку выровнять именно в этом блоке
-
-*/
 
 .intro__button {
     margin: 0 auto;

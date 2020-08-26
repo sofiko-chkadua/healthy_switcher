@@ -16,9 +16,7 @@
 @import url(blocks/recipes/recipes.css);
 @import url(blocks/social/social.css);
 @import url(blocks/contact/contact.css);
-@import url(blocks/line/line.css);
 @import url(blocks/section-title/section-title.css);
-@import url(blocks/recipes__date/recipes__date.css);
 
 /* Много ненужных файлов фонтов в папке fonts, удалить все что ты не подключаешь
 Декларацию фонтов перенести наверх цсс чтобы быстрее начали грузиться и в отдельный файл бы их */

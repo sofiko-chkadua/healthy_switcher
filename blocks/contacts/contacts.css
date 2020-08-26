@@ -1,9 +1,5 @@
 .contacts {
     display: flex;
     justify-content: space-between;
-    /* min-width в целом он, только не поняла какую задачу ты тут решаешь:) */
     margin: 0 auto;
 }
-
-
-/* для  contact  нуден отдельный файл contact.css*/

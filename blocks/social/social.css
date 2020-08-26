@@ -16,7 +16,6 @@
 }
 
 .social-cards__item {
-    /* max-width: ; */
     max-width: 350px;
     background-color: #252525;
     border-radius: 6px;
@@ -69,24 +68,11 @@
     display: flex;
     align-items: center;
 }
-
-
-/* через превдоэлемент */
-
-
-/* .social__card-line {
-    height: 2px;
-    background: #303030;
-} */
-
 .social__card-container {
     padding: 20px 40px 20px 30px;
 }
 
 .social__card-date {
-    /* у social__card-date, social__card-text, social__card-copywright  манджины до краев картчки не нужны
-сделай через падинг у общего еонтейнера для social__content который создать нужно
-*/
     font-weight: 500;
     font-size: 14px;
     line-height: 30px;
@@ -116,7 +102,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    /* не нужна высота*/
 }
 
 .social__card-button-for-icon {
@@ -136,10 +121,6 @@
     top: 131px;
     right: 152px;
     padding: 9px;
-}
-
-.social__card-photo {
-    background-size: contain;
 }
 
 .social__card-arrow {
